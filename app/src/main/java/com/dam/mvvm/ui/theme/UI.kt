@@ -48,16 +48,15 @@ fun nombreFile(nombre: String, modifier: Modifier) {
             textAlign = TextAlign.Center
         )
     }
-    /**
+
     Row(modifier = Modifier.padding(0.dp, 10.dp)) {
     Image(
-    painter = painterResource(id = R.drawable.),
+    painter = painterResource(id = R.drawable.fredo),
     contentDescription = "icono de android",
     modifier = Modifier
     .padding(30.dp, 0.dp)
     )
     }
-     */
 }
 
 
@@ -81,7 +80,7 @@ fun fButton(miViewModel: MyViewModel) {
                 .width(230.dp)
                 .padding(30.dp, 0.dp),
             colors = ButtonDefaults.buttonColors(Color.Yellow)
-        ) { // es un metodo que puede recibir el boton, al ser el último lo podemos poner fuera de los paréntesis
+        ) {
             Image(
                 painter = painterResource(R.drawable.giu),
                 contentDescription = "Icono2",

@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class MyViewModel() : ViewModel() {
 
     // para que sea mas facil la etiqueta del Log
-    private val TAG_LOG: String = "Mensaje de myViewModel"
+    private val TAG_LOG: String = "Mensaje de MyViewModel"
 
     // este v a a ser nuestra lista para la secuencia random
     // usamos mutable, ya que la queremos modificar y que las detecte el observer

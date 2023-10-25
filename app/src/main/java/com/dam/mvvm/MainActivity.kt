@@ -31,12 +31,27 @@ class MainActivity : ComponentActivity() {
                 Surface(modifier = Modifier.fillMaxSize(), color = Color(255,100,150)) { //lo mismo
 
                 }
-                UsuarioLoVe(miViewModel)//si lo creas fuera de la clase no tienes que llamarla a traves de objeto
+
+                /**
+                 * La clase Data de Kotlin tiene por objetivo el permitir el mantener datos de
+                 * distintos en el, asi como el poseer distintos metodos para un uso mas facil en el.
+                 *
+                 * Con esta clase se generara automaticamente los getters y setters.
+                 *
+                 * Asi como su metodo toString() pasara a bruto los distintos valores de lo que
+                 * ingreses a un toString en redundante formato String
+                 *
+                 * El Metodo copy() copia los distintos valores del objeto, lo que hace es un return
+                 * a lo bruto con todos sus valores, lo que puede ayudar al momento de hacer condi-
+                 * ciones, o para pasar sus valores a otro objeto
+                 *
+                 * Y luego presenta las funciones clasicas de equals y hashcode
+                 *
+                 */
 
             }
         }
         //mensaje de estado (solo lo puedo mirar el Logcat de la terminal de android)
         Log.d(TAG_LOG,"Estoy en onCreate")
     }
-
 }
